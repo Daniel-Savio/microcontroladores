@@ -1,0 +1,99 @@
+<circuit version="1.0.0-SR2" rev="1449" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="700,384" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../Desktop/MotorDePasso/AssemblerApplication1/AssemblerApplication1/Debug/AssemblerApplication1.hex" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Stepper" CircId="Stepper-3" mainComp="false" Show_id="true" Show_Val="false" Pos="1060,524" rotation="0" hflip="1" vflip="1" label="Stepper-3" idLabPos="-32,-62" labelrot="0" valLabPos="-14,36" valLabRot="0" Bipolar="false" Steps="32 _Teeth" Resistance="100 Ω" />
+
+<item itemtype="Subcircuit" CircId="ULN2803-4" mainComp="false" Show_id="true" Show_Val="false" Pos="804,460" rotation="0" hflip="1" vflip="1" label="ULN2803-4" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="true" />
+
+<item itemtype="Ground" CircId="Ground-16" mainComp="false" Show_id="false" Show_Val="false" Pos="572,560" rotation="0" hflip="1" vflip="1" label="Ground-16" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Switch" CircId="Switch-17" mainComp="false" Show_id="false" Show_Val="false" Pos="600,496" rotation="0" hflip="1" vflip="1" label="Switch-17" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Push" CircId="Push-18" mainComp="false" Show_id="false" Show_Val="false" Pos="608,368" rotation="0" hflip="1" vflip="1" label="Push-18" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Push" CircId="Push-19" mainComp="false" Show_id="false" Show_Val="false" Pos="608,412" rotation="0" hflip="1" vflip="1" label="Push-19" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Rail" CircId="Rail-33" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="916,528" rotation="0" hflip="1" vflip="1" label="Rail-33" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="Probe" CircId="Probe-35" mainComp="false" Show_id="false" Show_Val="true" Pos="832,300" rotation="-45" hflip="1" vflip="1" label="Probe-35" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-56" mainComp="false" Show_id="false" Show_Val="true" Pos="884,300" rotation="-45" hflip="1" vflip="1" label="Probe-56" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-57" mainComp="false" Show_id="false" Show_Val="true" Pos="928,300" rotation="-45" hflip="1" vflip="1" label="Probe-57" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-58" mainComp="false" Show_id="false" Show_Val="true" Pos="964,300" rotation="-45" hflip="1" vflip="1" label="Probe-58" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Push" CircId="Push-72" mainComp="false" Show_id="false" Show_Val="false" Pos="608,464" rotation="0" hflip="1" vflip="1" label="Push-72" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Node" CircId="Node-25" mainComp="false" Pos="572,436" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="572,476" />
+
+<item itemtype="Node" CircId="Node-54" mainComp="false" Pos="796,428" />
+
+<item itemtype="Node" CircId="Node-60" mainComp="false" Pos="788,412" />
+
+<item itemtype="Node" CircId="Node-63" mainComp="false" Pos="780,404" />
+
+<item itemtype="Node" CircId="Node-66" mainComp="false" Pos="772,396" />
+
+<item itemtype="Node" CircId="Node-79" mainComp="false" Pos="572,444" />
+
+<item itemtype="Connector" uid="connector-36" startpinid="mega328-1-PORTC2" endpinid="Node-60-0" pointList="740,416,788,416,788,412" />
+
+<item itemtype="Connector" uid="connector-37" startpinid="mega328-1-PORTC3" endpinid="Node-63-0" pointList="740,408,780,408,780,404" />
+
+<item itemtype="Connector" uid="connector-38" startpinid="mega328-1-PORTC4" endpinid="Node-66-0" pointList="740,400,772,400,772,396" />
+
+<item itemtype="Connector" uid="connector-39" startpinid="ULN2803-4-Out1" endpinid="Stepper-3-PinA1" pointList="844,468,932,468,932,492,988,492" />
+
+<item itemtype="Connector" uid="connector-40" startpinid="ULN2803-4-Out2" endpinid="Stepper-3-PinB1" pointList="844,476,916,476,916,508,988,508" />
+
+<item itemtype="Connector" uid="connector-41" startpinid="ULN2803-4-Out3" endpinid="Stepper-3-PinA2" pointList="844,484,900,484,900,540,988,540" />
+
+<item itemtype="Connector" uid="connector-42" startpinid="ULN2803-4-Out4" endpinid="Stepper-3-PinB2" pointList="844,492,884,492,884,556,988,556" />
+
+<item itemtype="Connector" uid="connector-43" startpinid="Push-18-switch0pinN" endpinid="mega328-1-PORTD1" pointList="624,368,672,368,672,408,692,408" />
+
+<item itemtype="Connector" uid="connector-44" startpinid="Push-19-switch0pinN" endpinid="mega328-1-PORTD2" pointList="624,412,692,412,692,416" />
+
+<item itemtype="Connector" uid="connector-46" startpinid="Push-18-pinP0" endpinid="Node-25-0" pointList="592,368,572,368,572,436" />
+
+<item itemtype="Connector" uid="connector-48" startpinid="Node-25-2" endpinid="Node-79-0" pointList="572,436,572,444" />
+
+<item itemtype="Connector" uid="connector-49" startpinid="Switch-17-pinP0" endpinid="Node-28-1" pointList="584,496,572,496,572,476" />
+
+<item itemtype="Connector" uid="connector-50" startpinid="Node-28-2" endpinid="Ground-16-Gnd" pointList="572,476,572,544" />
+
+<item itemtype="Connector" uid="connector-51" startpinid="Rail-33-outnod" endpinid="Stepper-3-PinCo" pointList="932,528,988,528,988,524" />
+
+<item itemtype="Connector" uid="connector-52" startpinid="mega328-1-PORTC1" endpinid="Node-54-0" pointList="740,424,796,424,796,428" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="Probe-35-inpin" endpinid="Node-54-1" pointList="816,316,816,428,796,428" />
+
+<item itemtype="Connector" uid="Connector-55" startpinid="Node-54-2" endpinid="ULN2803-4-In1" pointList="796,428,796,468" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="Probe-56-inpin" endpinid="Node-60-1" pointList="868,316,868,412,788,412" />
+
+<item itemtype="Connector" uid="Connector-61" startpinid="Node-60-2" endpinid="ULN2803-4-In2" pointList="788,412,788,476,796,476" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="Probe-57-inpin" endpinid="Node-63-1" pointList="912,316,912,404,780,404" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="Node-63-2" endpinid="ULN2803-4-In3" pointList="780,404,780,484,796,484" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="Probe-58-inpin" endpinid="Node-66-1" pointList="948,316,948,396,772,396" />
+
+<item itemtype="Connector" uid="Connector-67" startpinid="Node-66-2" endpinid="ULN2803-4-In4" pointList="772,396,772,492,796,492" />
+
+<item itemtype="Connector" uid="connector-47" startpinid="Push-19-pinP0" endpinid="Node-25-1" pointList="592,412,572,412,572,436" />
+
+<item itemtype="Connector" uid="Connector-76" startpinid="Switch-17-switch0pinN" endpinid="mega328-1-PORTD4" pointList="616,496,668,496,668,432,692,432" />
+
+<item itemtype="Connector" uid="Connector-77" startpinid="Push-72-switch0pinN" endpinid="mega328-1-PORTD3" pointList="624,464,652,464,652,424,692,424" />
+
+<item itemtype="Connector" uid="Connector-78" startpinid="Push-72-pinP0" endpinid="Node-79-1" pointList="592,464,572,464,572,444" />
+
+<item itemtype="Connector" uid="Connector-80" startpinid="Node-79-2" endpinid="Node-28-0" pointList="572,444,572,476" />
+
+</circuit>
